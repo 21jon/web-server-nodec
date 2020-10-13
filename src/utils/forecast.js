@@ -33,7 +33,7 @@ const forcast = (lat , long, callback  ) =>{
         callback(body.error, undefined)
     }else{
         data = body.current
-        callback(undefined, "Es sind " + data.temperature + "°C und "+ data.feelslike +"°C ist die Gefühlte temperatur")
+        callback(undefined, "Es sind " + data.temperature + "°C und "+ data.feelslike +"°C ist die Gefühlte temperatur and it is "+ body.location.localtime)
         
     }
     })
