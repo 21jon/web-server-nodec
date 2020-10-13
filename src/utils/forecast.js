@@ -36,15 +36,7 @@ const forcast = (lat , long, callback  ) =>{
         callback(undefined, "Es sind " + data.temperature + "°C und "+ data.feelslike +"°C ist die Gefühlte temperatur")
         
     }
-
-
-
-
-
     })
-
-
-
 }
 
 module.exports = forcast
