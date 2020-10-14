@@ -45,8 +45,6 @@ input{
 
     border: 1px solid #cccccc;
     padding: 8px;
-
-
 }
 
 button{
@@ -55,7 +53,6 @@ button{
     background: #888888;
     color: white;
     padding: 8px;
-
 }
 
  #git{
@@ -63,5 +60,4 @@ button{
     color: green;
     margin-right: 16px;
     text-decoration: none;
-
 }

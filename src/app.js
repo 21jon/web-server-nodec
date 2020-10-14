@@ -6,8 +6,6 @@ const geocode  = require('./utils/geocode')
 
 const app = express()
 const port = process.env.PORT ||3000
-//abc
-
 
 // Define paths for Express config
 const publicDirectoryPath = path.join(__dirname, '../public')
@@ -50,19 +48,15 @@ app.get('/weather', (req, res) => {
         return res.send({
             error: "Es muss eine Location eingetragen werden du Affe "
         })
-
     }
-    
     geocode(req.query.address, (error, { lat, long, location } = {}) => {
         if (error) {
             return res.send({error})
-        }
-       
+        }  
         forecast(lat, long, (error, forecastData) => {
             if (error) {
                 return res.send({error})
             }
-
             res.send({
                 location,
                 forecastData,
@@ -72,8 +66,6 @@ app.get('/weather', (req, res) => {
     })       
 })
 
-
-
 app.get('/product',(req , res )=>{
     
     if(!req.query.search){
@@ -82,18 +74,12 @@ app.get('/product',(req , res )=>{
 
         })
 
-    }
-    
-    
+    }    
     console.log(req.query)
     res.send({
         produck: []
-
     })
-
-
 })
-
 
 app.get('/source', (req , res)=>{
  
@@ -101,8 +87,6 @@ app.get('/source', (req , res)=>{
         name: "Jonas",
         title: "Zum Sourcecode"
     })
-
-
 })
 
 app.get('/help/*', (req, res) => {
@@ -124,5 +108,3 @@ app.get('*', (req, res) => {
 app.listen(port, () => {
     console.log('Server is up on port 3000.')
 })
-
-
