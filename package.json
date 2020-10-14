@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start":"node src/app.js"
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
@@ -11,7 +11,16 @@
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.1",
+    "package-lock.json": "^1.0.0",
     "request": "^2.88.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/21jon/web-server-nodec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/21jon/web-server-nodec/issues"
+  },
+  "homepage": "https://github.com/21jon/web-server-nodec#readme",
   "description": ""
 }

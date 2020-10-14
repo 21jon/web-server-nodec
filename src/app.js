@@ -98,9 +98,8 @@ app.get('/product',(req , res )=>{
 app.get('/source', (req , res)=>{
  
     res.render('Test',{
-
-
-        
+        name: "Jonas",
+        title: "Zu github und dem Sourcecode"
     })
 
 
