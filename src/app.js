@@ -94,6 +94,18 @@ app.get('/product',(req , res )=>{
 
 })
 
+
+app.get('/source', (req , res)=>{
+ 
+    res.render('Test',{
+
+
+        
+    })
+
+
+})
+
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
@@ -113,3 +125,5 @@ app.get('*', (req, res) => {
 app.listen(port, () => {
     console.log('Server is up on port 3000.')
 })
+
+
